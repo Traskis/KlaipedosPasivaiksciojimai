@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #85219e;
+    color: #18db63;
+}
+header {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #18db63;
+    border-radius: 12px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+main {
+    padding: 20px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.ivadas {
+    font-size: 20px;
+}
+.ivadas {
+    font-size: 28px !important; /* important suteikia pirmenybe */
+}
+#pasveikinimas {
+    text-decoration: underline;
+}
+nav a {
+    color: inherit; /* pakeicia a automatiskai melynus linkus i zalius kaip ir visi kiti tekstai */
+}
