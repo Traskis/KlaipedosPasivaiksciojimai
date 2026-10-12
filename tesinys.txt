@@ -1,0 +1,39 @@
+Tęsiamas mano HTML ir CSS mokymosi projektas „Pajūrio takai“. Projekto aplankas:
+C:\Users\arman\Desktop\kkkkkk\PatsBandauSvetaineKurti
+
+KAIP DIRBAME
+- Pirmiausia patikrink atitinkamą failą, kad matytum dabartinę jo būseną.
+- Failų už mane nekeisk, nebent aiškiai paprašysiu. Noriu pats atlikti pakeitimus.
+- Duok tik vieną mažą užduotėlę vienu metu. Pasakyk, ką turiu pasiekti, bet palik man pačiam nuspręsti, kokias HTML žymas ar CSS savybes panaudoti.
+- Kai parašau „gerai“, „ok“ arba „k“, pirmiausia patikrink mano pakeistą failą ir tik tada pasiūlyk kitą mažą žingsnį.
+- Aiškink paprastai: ką pakeitimas daro, kodėl jo reikia ir kaip galėčiau tai paaiškinti dėstytojai.
+- Neužduok kontrolinių klausimų. Nekreipk dėmesio į rašybos klaidas, jei jos netrukdo svetainei veikti.
+- Neduok kelių didelių žingsnių iškart. Kai rodai kodą, pateik jį trumpai ir aiškiai.
+
+UŽDUOTIES REIKALAVIMAI
+- Bent keturi puslapiai: pradzia.html, marsrutai.html, galerija.html ir anketa.html.
+- Vieningas dizainas; header, pagrindinis turinys su 2–3 stulpeliais, aside ir footer.
+- Lentelės ir sąrašai.
+- Bent 6 nuotraukos.
+- Forma su įvairių tipų input laukais.
+- Panaudoti class, id, prasminga inherit ir !important.
+- Responsive dizainas be bibliotekų ar karkasų.
+- Padėti suprasti visą HTML puslapio schemą.
+
+JAU MOKĖMĖS
+- body, header, nav, main, aside, footer, antraštės, pastraipos, sąrašai ir nuorodos.
+- class, id, spalvos, padding, border, border-radius, text-align, display, margin, font-size, text-decoration.
+- inherit ir !important.
+- display: flex ir telefono vaizdo patikrinimą naršyklės įrenginio įrankiuose.
+
+DABARTINĖ BŪSENA
+- pradzia.html turi header su navigacija, main, section su pasveikinimu, įvadine pastraipa ir sąrašu, aside bei footer.
+- style.css prijungtas puslapiams. main naudoja display: flex ir gap: 20px; section turi flex: 2, aside — flex: 1. Kai ekranas iki 600 px pločio, @media taisyklė sudeda sekciją ir aside vieną po kito.
+- CSS faile yra dvi .ivadas taisyklės: font-size: 20px ir font-size: 28px !important. Jų netrink ir nekeisk nepaaiškinęs, ką jos daro.
+- marsrutai.html turi bendrą CSS, header, keturių punktų navigaciją, įvadinį tekstą, maršrutų nuorodų sąrašą, kelias pastraipas ir pirmo maršruto aprašymą.
+- Nuoroda #pajurio-takas veikia. Patikrinau, kad paspaudus ją adreso gale atsiranda #pajurio-takas.
+- Antro ir trečio maršrutų nuorodos veda į #juros-pakrante ir #gamtos-stebuklai, bet atitinkamų aprašymų puslapyje dar nėra.
+- galerija.html ir anketa.html kol kas tušti.
+
+TĘSIANT
+Pirmiausia patikrink tą failą, kurį dabar tvarkome. Patvirtink, ką jau padariau, ir duok vieną aiškią mažą užduotėlę. Toliau judėkime po vieną žingsnį, kad mokyčiausi ir galėčiau pats paaiškinti darbą atsiskaitydamas.

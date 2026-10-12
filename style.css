@@ -15,6 +15,8 @@ nav ul {
 }
 main {
     padding: 20px;
+    display: flex; /*padaro du stulpelius kur section o kur aside*/
+    gap: 20px; /* papildomas taras tarp section ir aside */
 }
 nav li {
     display: inline-block;
@@ -31,4 +33,18 @@ nav li {
 }
 nav a {
     color: inherit; /* pakeicia a automatiskai melynus linkus i zalius kaip ir visi kiti tekstai */
+}
+section {
+    border: 2px solid #18db63; /*apgaubia pasisveikinima, atskiria nuo aside*/
+    padding: 15px;
+    flex: 2; /*section uzima dvigubai daugiau vietos nei aside*/
+}
+aside {
+    flex: 1; /*aside uzima puse vietos nei section*/
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column; /* kai langas bus siauresnis nei 600px, section ir aside bus vienas po kitu */
+    }
 }
