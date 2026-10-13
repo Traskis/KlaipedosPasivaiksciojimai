@@ -1,42 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="lt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Marsrutai</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lietuvos pajūrio maršrutai ir kelionės patarimai.">
+  <title>Pajūrio takai | Maršrutai</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Marsrutai</h1>
-        <nav>
-            <ul>
-                <li><a href="pradzia.html">Pradzia</a></li>
-                <li><a href="galerija.html">Galerija</a></li>
-                <li><a href="anketa.html">Anketa</a></li>
-                <li><a href="marsrutai.html">Marsrutai</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h2>Maršrutai</h2>
-        <p>Čia galite rasti įvairius maršrutus pajūryje, kurie leis jums pasimėgauti gamta ir atrasti naujas vietas.</p>
-        <ul>
-            <li><a href="#pajurio-takas">Maršrutas 1: Pajūrio takas</a></li>
-            <li><a href="#juros-pakrantė">Maršrutas 2: Jūros pakrantė</a></li>
-            <li><a href="#gamtos-stebuklai">Maršrutas 3: Gamtos stebuklai</a></li>
-        </ul>
-        <p>Prieš kelionę pasiimkite vandens, nes ilgesniame take gali nebūti parduotuvių ar geriamojo vandens vietų.</p>
-        <p>Patogi avalynė padės saugiai eiti smėliu, miško takeliais ir nelygia pakrante. Pasitikrinkite orų prognozę ir pasirinkite tinkamus drabužius.</p>
-        <p>Kelionėje laikykitės pažymėtų takų, gerbkite gamtą ir nepalikite šiukšlių. Taip pajūrio aplinka išliks graži ir kitiems lankytojams.</p>
+  <div id="svetaine">
+    <header class="svetaines-antraste">
+      <div class="antrastes-turinys">
+        <a class="svetaines-pavadinimas" href="pradzia.html">Pajūrio takai</a>
 
-        <h3 id="pajurio-takas">Maršrutas 1: Pajūrio takas</h3>
-        <p>Šis maršrutas veda per nuostabius pajūrio takus, kur galėsite pasigrožėti jūros vaizdais ir gamtos grožiu.</p>
-    
-    
-    </section>
-    <footer>
-        <p>&copy; 2026 Pajūrio takai</p>
+        <input class="meniu-varnele" id="meniu-varnele" type="checkbox" aria-label="Rodyti arba slėpti meniu" aria-controls="pagrindinis-meniu">
+        <label class="meniu-mygtukas" for="meniu-varnele" aria-hidden="true">
+          <span class="meniu-bruksnelis"></span>
+          <span class="meniu-bruksnelis"></span>
+          <span class="meniu-bruksnelis"></span>
+        </label>
+
+        <nav class="pagrindinis-meniu" id="pagrindinis-meniu" aria-label="Pagrindinis meniu">
+          <a href="pradzia.html">Pradžia</a>
+          <a href="marsrutai.html" aria-current="page">Maršrutai</a>
+          <a href="galerija.html">Galerija</a>
+          <a href="anketa.html">Anketa</a>
+        </nav>
+
+        <span class="antrastes-uzrasas">Vakarų Lietuvos pakrantė</span>
+      </div>
+    </header>
+
+    <div class="puslapio-isdestymas">
+      <main class="pagrindinis-turinys">
+        <section class="puslapio-antraste">
+          <p class="skyriaus-uzrasas">Atrask pajūrį</p>
+          <h1>Maršrutai</h1>
+          <p>Pasirink pasivaikščiojimą pagal atstumą ir kelionės trukmę.</p>
+        </section>
+
+        <section class="lenteles-skyrius">
+          <h2>Penki takai prie jūros</h2>
+          <div class="lenteles-slinkimas">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Maršrutas</th>
+                  <th scope="col">Atstumas</th>
+                  <th scope="col">Trukmė</th>
+                  <th scope="col">Sudėtingumas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Klaipėdos molas</th>
+                  <td>3 km</td>
+                  <td>1 val.</td>
+                  <td>Lengvas</td>
+                </tr>
+                <tr>
+                  <th scope="row">Olando kepurė</th>
+                  <td>5 km</td>
+                  <td>2 val.</td>
+                  <td>Lengvas</td>
+                </tr>
+                <tr>
+                  <th scope="row">Juodkrantė – Raganų kalnas</th>
+                  <td>7 km</td>
+                  <td>3 val.</td>
+                  <td>Vidutinis</td>
+                </tr>
+                <tr>
+                  <th scope="row">Nida – Parnidžio kopa</th>
+                  <td>9 km</td>
+                  <td>4 val.</td>
+                  <td>Vidutinis</td>
+                </tr>
+                <tr>
+                  <th scope="row">Smiltynė – Juodkrantė</th>
+                  <td>18 km</td>
+                  <td>6 val.</td>
+                  <td>Ilgas</td>
+                </tr>
+                <tr>
+                  <th scope="row">Melnrage-Giruliai</th>
+                  <td>6 km</td>
+                  <td>2 val.</td>
+                  <td>Vidutinis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="marsrutu-patarimai">
+          <h2>Prieš kelionę</h2>
+          <ul>
+            <li>Pasiimk vandens, ypač į ilgesnį žygį.</li>
+            <li>Avėk patogius batus.</li>
+            <li>Pasitikrink orų ir kelto tvarkaraštį.</li>
+            <li>Laikykis pažymėtų takų ir saugok gamtą.</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside class="soninis-blokas">
+        <h2>Kelionei pravers</h2>
+        <ul>
+          <li>Vanduo</li>
+          <li>Apsauga nuo vėjo</li>
+          <li>Įkrautas telefonas</li>
+        </ul>
+        <p><a href="anketa.html">Planuoti išvyką</a></p>
+      </aside>
+    </div>
+
+    <footer class="puslapio-apacia">
+      <p>© 2026 Pajūrio takai</p>
     </footer>
+  </div>
 </body>
 </html>

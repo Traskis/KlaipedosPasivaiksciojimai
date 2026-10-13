@@ -1,47 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="lt">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pajūrio takai</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atrask Lietuvos pajūrio takus, švyturius ir pakrantės miestelius.">
+  <title>Pajūrio takai | Pradžia</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Pajūrio takai</h1>
-        <nav>
-            <ul>
-                <li><a href="pradzia.html">Pradžia</a></li>
-                <li><a href="marsrutai.html">Maršturai</a></li>
-                <li><a href="galerija.html">Galerija</a></li>
-                <li><a href="anketa.html">Anketa</a></li>
-            </ul>
+  <div id="svetaine">
+    <header class="svetaines-antraste">
+      <div class="antrastes-turinys">
+        <a class="svetaines-pavadinimas" href="pradzia.html">Pajūrio takai</a>
+
+        <input class="meniu-varnele" id="meniu-varnele" type="checkbox" aria-label="Rodyti arba slėpti meniu" aria-controls="pagrindinis-meniu">
+        <label class="meniu-mygtukas" for="meniu-varnele" aria-hidden="true">
+          <span class="meniu-bruksnelis"></span>
+          <span class="meniu-bruksnelis"></span>
+          <span class="meniu-bruksnelis"></span>
+        </label>
+        <nav class="pagrindinis-meniu" id="pagrindinis-meniu" aria-label="Pagrindinis meniu">
+          <a href="pradzia.html" aria-current="page">Pradžia</a>
+          <a href="marsrutai.html">Maršrutai</a>
+          <a href="galerija.html">Galerija</a>
+          <a href="anketa.html">Anketa</a>
         </nav>
+
+        <span class="antrastes-uzrasas">Vakarų Lietuvos pakrantė</span>
+      </div>
     </header>
-    <main>
-        <section>
-            <h2 id="pasveikinimas">Sveiki atvyke i Pajurio takus</h2>
-            <p class="ivadas">Ši svetainė skirta tiems, kurie nori atrasti nuostabius pajūrio maršrutus ir pasimėgauti
-                gamta.</p>
-            <h3>Ka galima atrasti</h3>
-            <ul>
-                <li>pasivaiksciojimo takus</li>
-                <li>juros pakrante</li>
-                <li>pajurio gamta</li>
-            </ul>
+
+    <div class="puslapio-isdestymas">
+      <main class="pagrindinis-turinys">
+        <section class="pradzios-blokas">
+          <div class="pradzios-tekstas">
+            <p class="skyriaus-uzrasas">Lietuvos pajūrio gidas</p>
+            <h1>Kur takas susitinka su jūra</h1>
+            <p class="pradzios-aprasymas">
+              Atrask pajūrio miestelius, kopas ir miško takus. Pasirink kelionę
+              pagal savo norus ir tempą.
+            </p>
+            <a class="teksto-nuoroda" href="marsrutai.html">Peržiūrėti maršrutus</a>
+          </div>
+
+          <figure class="pagrindine-nuotrauka">
+            <img
+              src="https://www.tv3.lt/Uploads/UArticles/leadPhotos/78/21/c6/c1/7821c6c19f3593da9d66d4328e963a40.jpg"
+              alt="Bangos lūžta į krantą vėjuotą dieną">
+            <figcaption>Baltijos pakrantė</figcaption>
+          </figure>
         </section>
 
-        <aside>
-            <h3>Apie pajuri</h3>
-            <p>pajūrio takai kviečia pažinti gamtą ir pasigrožėti Baltijos jūros pakrante.</p>
-        </aside>
-        
-    </main>
-    <footer>
-        <p>&copy; 2026 Pajūrio takai</p>
-    </footer>
-</body>
+        <section class="ivadas">
+          <h2>Apie pajūrį</h2>
+          <p>
+            Šioje svetainėje rasi kelis Lietuvos pajūrio maršrutus, nuotraukų
+            galeriją ir anketą išvykai suplanuoti.
+          </p>
+        </section>
 
+        <section class="skiltys-tinklelis" aria-label="Svetainės skiltys">
+          <a class="skilties-kortele" href="marsrutai.html">
+            <h2>Maršrutai</h2>
+            <p>Sužinok takų atstumus ir kelionės trukmę.</p>
+          </a>
+          <a class="skilties-kortele" href="galerija.html">
+            <h2>Galerija</h2>
+            <p>Pamatyk pajūrio vietovių nuotraukas.</p>
+          </a>
+          <a class="skilties-kortele" href="anketa.html">
+            <h2>Anketa</h2>
+            <p>Pasidalink savo kelionės planais.</p>
+          </a>
+        </section>
+      </main>
+
+      <aside class="soninis-blokas">
+        <h2>Naudingi patarimai</h2>
+        <ul>
+          <li>Pasiimk vandens ir užkandžių.</li>
+          <li>Pasitikrink orų prognozę.</li>
+          <li>Laikykis pažymėtų takų.</li>
+          <li>Nepalik šiukšlių gamtoje.</li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer class="puslapio-apacia">
+      <p>© 2026 Pajūrio takai</p>
+    </footer>
+  </div>
+</body>
 </html>

@@ -1,0 +1,25 @@
+LT	
+Sukurti svetainę.
+Reikalavimai turiniui:
+Minimum 4 psl., turinys askleidžia dalykinę sritį; 
+Sukurtas vieningas dizainas;
+"Content" dalį sudaro 2 аr 3 stulpelių struktūrą, "aside" , "header" ir "footer" dalys;
+Panaudotos lentelės, sąrašai (pagal poreikį);
+Minimalus meniu 4 punktai (pvz.): Pagrindinis, Apie, Kontaktai, Galerėja, Anketa, Nustatymai
+Yra paveikslėlių blokas (nemažiau 6 pav.) 
+Sukurta anketa-forma (užsakymo pvz., panaudoti įvairus input tipo laukai)
+Nenaudoti karkasų, bibliotekų
+
+Reikalavimai:
+Reikia panaudoti šiuos selektorius (ir mokėti paaiškinti, kuo pirmas skiriasi nuo antro, bei ką jie visi reiškia):
+Klasės (class);
+ID
+Tinklalapio schema (html paaiškinimui) 
+Sukurtoje stilių lentelėje turi būti savybių paveldėjimo pavyzdys, t.y., būtina prasmingai panaudoti raktinį žodį inherit (t.y., ištrynus šį raktinį žodį, vaizdas ekrane turi pasikeisti) ir žinoti, ką jis reiškia; 
+Sukurtoje stilių lentelėje turi būti kaskadų mechanizmo pavyzdys, būtina prasmingai panaudoti raktinį žodį !important (t.y., ištrynus šį raktinį žodį, vaizdas ekrane turi pasikeisti); 
+
+
+LT	
+Naudojant pirmą praktinį darbą patobulinti svetainę sukurdami responsive design (nenaudojant bibliotekų ar karkasų).
+
+

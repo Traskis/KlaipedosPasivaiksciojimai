@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pateik užklausą dėl išvykos į Lietuvos pajūrį.">
+  <title>Pajūrio takai | Anketa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="svetaine">
+    <header class="svetaines-antraste">
+      <div class="antrastes-turinys">
+        <a class="svetaines-pavadinimas" href="pradzia.html">Pajūrio takai</a>
+
+        <input class="meniu-varnele" id="meniu-varnele" type="checkbox" aria-label="Rodyti arba slėpti meniu" aria-controls="pagrindinis-meniu">
+        <label class="meniu-mygtukas" for="meniu-varnele" aria-hidden="true">
+          <span class="meniu-bruksnelis"></span>
+          <span class="meniu-bruksnelis"></span>
+          <span class="meniu-bruksnelis"></span>
+        </label>
+
+        <nav class="pagrindinis-meniu" id="pagrindinis-meniu" aria-label="Pagrindinis meniu">
+          <a href="pradzia.html">Pradžia</a>
+          <a href="marsrutai.html">Maršrutai</a>
+          <a href="galerija.html">Galerija</a>
+          <a href="anketa.html" aria-current="page">Anketa</a>
+        </nav>
+
+        <span class="antrastes-uzrasas">Vakarų Lietuvos pakrantė</span>
+      </div>
+    </header>
+
+    <div class="puslapio-isdestymas">
+      <main class="pagrindinis-turinys">
+        <section class="puslapio-antraste">
+          <p class="skyriaus-uzrasas">Suplanuok išvyką</p>
+          <h1>Anketa</h1>
+          <p>Užpildyk laukus ir papasakok apie savo kelionės planus.</p>
+        </section>
+
+        <form class="keliones-anketa" action="anketa.html" method="get">
+          <label class="anketos-laukelis">
+            Vardas:
+            <input type="text" name="vardas" required>
+          </label>
+
+          <label class="anketos-laukelis">
+            El. paštas:
+            <input type="email" name="pastas" required>
+          </label>
+
+          <label class="anketos-laukelis">
+            Telefono numeris:
+            <input type="tel" name="telefonas">
+          </label>
+
+          <label class="anketos-laukelis">
+            Kelionės data:
+            <input type="date" name="data" required>
+          </label>
+
+          <label class="anketos-laukelis">
+            Norimas maršrutas:
+            <select name="marsrutas" required>
+              <option value="" selected disabled>Pasirink maršrutą</option>
+              <option>Klaipėdos molas</option>
+              <option>Olando kepurė</option>
+              <option>Juodkrantė ir Raganų kalnas</option>
+              <option>Nida ir Parnidžio kopa</option>
+              <option>Dar neapsisprendžiau</option>
+            </select>
+          </label>
+
+          <label class="anketos-laukelis">
+            Žmonių skaičius:
+            <input type="number" name="zmones" min="1" max="20" value="2">
+          </label>
+
+          <fieldset class="pasirinkimu-grupe">
+            <legend>Kelionės tempas:</legend>
+            <label><input type="radio" name="tempas" value="ramus" checked> Ramus pasivaikščiojimas</label>
+            <label><input type="radio" name="tempas" value="aktyvus"> Aktyvus žygis</label>
+            <label><input type="radio" name="tempas" value="seima"> Išvyka su šeima</label>
+          </fieldset>
+
+          <label class="anketos-laukelis">
+            Papildoma informacija:
+            <textarea name="pastabos" rows="4"></textarea>
+          </label>
+
+          <label class="duomenu-sutikimas">
+            <input type="checkbox" name="sutikimas" value="taip" required>
+            Sutinku, kad mano duomenys būtų panaudoti atsakant į užklausą.
+          </label>
+
+          <button class="anketos-mygtukas" type="submit">Pateikti užklausą</button>
+        </form>
+      </main>
+
+      <aside class="soninis-blokas">
+        <h2>Prieš išvyką</h2>
+        <ul>
+          <li>Pasitikrink orų prognozę.</li>
+          <li>Pasiimk vandens.</li>
+          <li>Patikrink kelto tvarkaraštį.</li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer class="puslapio-apacia">
+      <p>© 2026 Pajūrio takai</p>
+    </footer>
+  </div>
+</body>
+</html>

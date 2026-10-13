@@ -1,0 +1,451 @@
+/* Visiems elementams leidžia lengviau skaičiuoti plotį ir aukštį kartu su kraštinėmis. */
+* {
+  box-sizing: border-box;
+}
+
+/* Nustato viso puslapio pagrindinį šriftą, teksto spalvą ir foną. */
+body {
+  margin: 0;
+  background-color: #f5f2e8;
+  color: #173f3c;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Visoms nuorodoms nustato numatytą teksto spalvą. */
+a {
+  color: #28675e;
+}
+
+/* Paveikslėliai nerodomi platesni už jiems skirtą vietą ir nepalieka tarpo po savimi. */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Viršutinė puslapio juosta: fonas, tekstas ir vidiniai tarpai. */
+.svetaines-antraste {
+  padding: 18px 0;
+  background-color: #173f3c;
+  color: #f5f2e8;
+}
+
+/* Sulygiuoja svetainės pavadinimą, meniu ir papildomą užrašą vienoje eilutėje. */
+.antrastes-turinys {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Svetainės pavadinimo nuorodos išvaizda. */
+.svetaines-pavadinimas {
+  color: #f5f2e8;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Meniu nuorodas išdėsto eilute ir palieka tarpus tarp jų. */
+.pagrindinis-meniu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+/* Pagrindinio meniu nuorodų spalva ir pabraukimo išjungimas. */
+.pagrindinis-meniu a {
+  color: #f5f2e8;
+  text-decoration: none;
+}
+
+/* Aktyvus meniu puslapis arba nuoroda po pele paryškinama geltona spalva. */
+.pagrindinis-meniu a:hover,
+.pagrindinis-meniu a[aria-current="page"] {
+  color: #e1b34d;
+  text-decoration: underline;
+}
+
+/* Mažas užrašas antraštėje rodomas prislopinta spalva. */
+.antrastes-uzrasas {
+  color: #bdcbc2;
+  font-size: 13px;
+}
+
+/* Pagrindinė turinio sritis: du stulpeliai, pagrindinis platesnis už šoninį. */
+.puslapio-isdestymas {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 35px;
+}
+
+/* Leidžia pagrindiniam turiniui susiaurėti neišplečiant viso puslapio. */
+.pagrindinis-turinys {
+  min-width: 0;
+}
+
+/* Pagrindinėms antraštėms naudojamas serifinis šriftas. */
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Puslapio pagrindinės antraštės dydis ir apatinis tarpas. */
+h1 {
+  margin: 0 0 12px;
+  font-size: 42px;
+}
+
+/* Antro lygio antraštei panaikinamas viršutinis tarpas. */
+h2 {
+  margin-top: 0;
+}
+
+/* Puslapio pavadinimo sričiai pridedamas apatinis tarpas ir skiriamoji linija. */
+.puslapio-antraste {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c9c8b9;
+}
+
+/* Mažas skyriaus užrašas paryškinamas, nuspalvinamas raudonai ir rašomas didžiosiomis raidėmis. */
+.skyriaus-uzrasas {
+  margin-bottom: 8px;
+  color: #c7563e;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Pradžios puslapio pagrindinė dalis padalijama į du sulygiuotus stulpelius. */
+.pradzios-blokas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Paveikslėlio aprašo blokas nepalieka numatyto išorinio tarpo. */
+.pagrindine-nuotrauka {
+  margin: 0;
+}
+
+/* Pagrindinis paveikslėlis užpildo nustatytą plotą jo neiškraipydamas. */
+.pagrindine-nuotrauka img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Paveikslėlio aprašas rodomas mažesniu, prislopintos spalvos tekstu. */
+.pagrindine-nuotrauka figcaption {
+  margin-top: 6px;
+  color: #687773;
+  font-size: 13px;
+}
+
+/* Tekstinė nuoroda pateikiama vienoje eilutėje, pastorinta ir su viršutiniu tarpu. */
+.teksto-nuoroda {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Pradžios aprašymas ir maršrutų patarimai atskiriami viršutiniu krašteliu. */
+.ivadas,
+.marsrutu-patarimai {
+  margin-top: 35px;
+  padding-top: 22px;
+  border-top: 1px solid #c9c8b9;
+}
+
+/* Pradžios puslapio kortelės išdėstomos trijuose vienoduose stulpeliuose. */
+.skiltys-tinklelis {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* Kortelėms suteikiamas vidinis tarpas, fonas ir paslepiamas nuorodos pabraukimas. */
+.skilties-kortele {
+  padding: 18px;
+  background-color: #d5ddd4;
+  text-decoration: none;
+}
+
+/* Užvedus pelę ant kortelės, pasikeičia jos fono spalva. */
+.skilties-kortele:hover {
+  background-color: #e30f0f;
+}
+
+/* Kortelės antraštė rodoma mažesniu šriftu. */
+.skilties-kortele h2 {
+  font-size: 22px;
+}
+
+/* Kortelės aprašui panaikinamas apatinis tarpas. */
+.skilties-kortele p {
+  margin-bottom: 0;
+}
+
+/* Šoniniam informacijos blokui suteikiamas vidinis tarpas ir kairysis skirtukas. */
+.soninis-blokas {
+  padding: 18px;
+  border-left: 1px solid #c9c8b9;
+}
+
+/* Šoninio bloko nuoroda paveldi aplinkinio teksto spalvą. */
+.soninis-blokas a {
+  color: inherit;
+}
+
+/* Lentelės skyriui pridedamas viršutinis tarpas. */
+.lenteles-skyrius {
+  margin-top: 30px;
+}
+
+/* Jei lentelė per plati, leidžia ją slinkti į šoną. */
+.lenteles-slinkimas {
+  overflow-x: auto;
+}
+
+/* Lentelė užima visą jai skirtą plotį, o gretimų langelių kraštinės sujungiamos. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Lentelės langeliams nustatomi vidiniai tarpai ir apatinė skiriamoji linija. */
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #c9c8b9;
+}
+
+/* Užvedus pelę ant maršruto eilutės, pasikeičia jos fonas. */
+tbody tr:hover {
+  background-color: #f15d07;
+}
+
+/* Lentelės stulpelių antraštei nustatomas tamsus fonas ir šviesus tekstas. */
+thead {
+  background-color: #173f3c;
+  color: #f5f2e8;
+}
+
+/* Galerijos nuotraukos išdėstomos dviem stulpeliais. */
+.galerijos-tinklelis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* Galerijos paveikslėlių blokai neturi numatyto išorinio tarpo. */
+.galerijos-nuotrauka {
+  margin: 0;
+}
+
+/* Galerijos nuotraukoms nustatomas vienodas dydis, apkarpymas ir apvalūs kampai. */
+.galerijos-nuotrauka img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+/* Aprašui pridedamas tarpas viršuje. */
+.galerijos-nuotrauka figcaption {
+  padding-top: 6px;
+}
+
+/* Anketos laukai išdėstomi vertikaliai su vienodais tarpais. */
+.keliones-anketa {
+  display: grid;
+  gap: 16px;
+}
+
+/* Kiekvieno anketos lauko pavadinimas ir įvedimo vieta išdėstomi stulpeliu. */
+.anketos-laukelis {
+  display: grid;
+  gap: 6px;
+  font-weight: bold;
+}
+
+/* Anketos įvedimo laukus, pasirinkimų sąrašą ir teksto lauką suvienodina. */
+.anketos-laukelis input,
+.anketos-laukelis select,
+.anketos-laukelis textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b9bdb0;
+  background-color: #fbfaf5;
+  color: #173f3c;
+  font: inherit;
+}
+
+/* Pasirinkimų grupei pridedamas rėmelis, tarpai ir stulpelinis išdėstymas. */
+.pasirinkimu-grupe {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #c9c8b9;
+  display: grid;
+  gap: 8px;
+}
+
+/* Pasirinkimų grupės pavadinimas pastorinamas. */
+.pasirinkimu-grupe legend {
+  font-weight: bold;
+}
+
+/* Sutikimo varnelės tekstas išlygiuojamas šalia varnelės. */
+.duomenu-sutikimas {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Anketos pateikimo mygtuko dydis, spalvos ir pelės žymeklis. */
+.anketos-mygtukas {
+  width: fit-content;
+  padding: 12px 18px;
+  border: 0;
+  background-color: #c7563e;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Visiems mygtukams nustatomas tamsus fonas; !important leidžia šiai spalvai laimėti prieš įprastą CSS taisyklę. */
+button {
+  background-color: #173f3c !important;
+}
+
+/* Puslapio apačia: tamsus fonas, šviesus tekstas ir centravimas. */
+.puslapio-apacia {
+  padding: 16px;
+  background-color: #173f3c;
+  color: #f5f2e8;
+  text-align: center;
+}
+
+/* Puslapio apačios pastraipa neturi numatyto išorinio tarpo. */
+.puslapio-apacia p {
+  margin: 0;
+}
+
+/* Ekranuose iki 850 pikselių pritaikomas siauresnis puslapio išdėstymas. */
+@media (max-width: 850px) {
+  /* Antraštės turinys gali persikelti į kitą eilutę; meniu langelis remiasi į ją. */
+  .antrastes-turinys {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  /* Burgerio mygtuko dydis, žalia kraštinė ir brūkšnelių sulygiavimas. */
+  .meniu-mygtukas {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #1ad35a;
+    border-radius: 25px;
+    /* Mygtuko vidų išdėsto centruota gardelė. */
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    /* Nustato tarpus tarp brūkšnelių ir pastumia mygtuką į dešinę. */
+    gap: 4px;
+    align-content: center;
+    margin-left: auto;
+  }
+
+  /* Vienas burgerio brūkšnelis: plotis, storis ir spalva. */
+  .meniu-bruksnelis {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #1ad35a;
+  }
+
+  /* Išskleidžiamas meniu padedamas žemiau mygtuko, o nuorodos sudedamos stulpeliu. */
+  .pagrindinis-meniu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    z-index: 2;
+    width: 220px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #173f3c;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* Jei varnelė nepažymėta, meniu paslepiamas. */
+  .meniu-varnele:not(:checked)~.pagrindinis-meniu {
+    display: none;
+  }
+
+  /* Atidarius meniu pasikeičia burgerio mygtuko fonas ir kraštinė. */
+  .meniu-varnele:checked+.meniu-mygtukas {
+    background-color: #cb1a20;
+    border-color: #cb1a20;
+  }
+
+  /* Atidarius meniu pasikeičia jo burgerio brūkšnelių spalva. */
+  .meniu-varnele:checked+.meniu-mygtukas .meniu-bruksnelis {
+    background-color: #e28409;
+  }
+
+  /* Paslepia patį varnelės langelį, bet palieka jį veikti paspaudus etiketę. */
+  .meniu-varnele {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+
+  /* Meniu nuorodoms mažuose ekranuose pridedami didesni paspaudimo plotai. */
+  .pagrindinis-meniu a {
+    padding: 10px 12px;
+    border-radius: 7px;
+    font-size: 16px;
+  }
+
+  /* Aktyvi arba pele pažymėta meniu nuoroda gauna šviesesnį foną. */
+  .pagrindinis-meniu a:hover,
+  .pagrindinis-meniu a[aria-current="page"] {
+    background-color: #24534d;
+    text-decoration: none;
+  }
+
+  /* Papildomas užrašas antraštėje persikelia į atskirą eilutę. */
+  .antrastes-uzrasas {
+    flex: 1 0 100%;
+  }
+
+  /* Šoninė informacija perkeliama po pagrindiniu turiniu. */
+  .puslapio-isdestymas {
+    grid-template-columns: 1fr;
+  }
+
+  /* Pradžios puslapio dalys, kortelės ir galerija mažuose ekranuose rodomos vienu stulpeliu. */
+  .pradzios-blokas,
+  .skiltys-tinklelis,
+  .galerijos-tinklelis {
+    grid-template-columns: 1fr;
+  }
+
+  /* Šoninis blokas atskiriamas viršutine linija, o kairioji linija panaikinama. */
+  .soninis-blokas {
+    border-top: 1px solid #c9c8b9;
+    border-left: 0;
+  }
+}

@@ -1,0 +1,59 @@
+PAJŪRIO TAKAI – SVETAINĖS APRAŠYMAS
+===================================
+
+APIE PROJEKTĄ
+-------------
+„Pajūrio takai“ – keturių puslapių svetainė apie Lietuvos pajūrį.
+Lankytojai gali peržiūrėti maršrutus, pamatyti nuotraukas ir užpildyti
+kelionės anketą.
+
+SVETAINĖS PUSLAPIAI
+-------------------
+1. pradzia.html – svetainės pradžios puslapis.
+2. marsrutai.html – penkių maršrutų lentelė ir kelionės patarimai.
+3. galerija.html – šešių pajūrio nuotraukų galerija.
+4. anketa.html – forma kelionės informacijai įvesti.
+
+KAIP SUDARYTAS PUSLAPIS
+-----------------------
+Visuose puslapiuose naudojama panaši sandara:
+
+body
+|-- header                 Puslapio pavadinimas ir meniu
+|-- puslapio-isdestymas    Pagrindinio turinio ir šoninės dalies vieta
+|   |-- main               Svarbiausias puslapio turinys
+|   `-- aside              Papildoma informacija ir patarimai
+`-- puslapio-apacia        Puslapio apačia
+
+Meniu nuorodos atidaro kitus HTML puslapius. Mažame ekrane meniu galima
+atidaryti ir uždaryti paspaudus burgerio mygtuką. Visų puslapių dizainas
+aprašytas viename styles.css faile.
+
+HTML IR CSS
+-----------
+HTML aprašo puslapio turinį ir jo sandarą. Pavyzdžiui, <header> žymi antraštę,
+<nav> – meniu, <main> – pagrindinį turinį, o <footer> – puslapio apačią.
+
+CSS keičia puslapio išvaizdą: spalvas, šriftus, tarpus ir elementų vietą.
+CSS klasė rašoma HTML elemento class požymyje, o jos taisyklė CSS faile
+pradedama tašku. Pavyzdžiui, class="skilties-kortele" stilius aprašytas kaip
+.skilties-kortele. Klasės pavadinimas parinktas lietuviškai, o CSS savybių,
+kaip color ar background-color, pavadinimai paliekami anglų kalba, nes tai CSS
+kalbos žodžiai. Tą pačią klasę galima naudoti keliems elementams.
+
+CSS Grid naudojamas pagrindiniam turiniui su šonine informacija išdėstyti,
+taip pat pradžios puslapio kortelėms ir galerijos nuotraukoms. Flexbox
+naudojamas antraštės elementams ir meniu išdėstyti. Mažame ekrane CSS taisyklė
+@media pakeičia išdėstymą, kad turinys būtų patogiau skaitomas.
+
+ANKETA
+------
+Privalomus laukus naršyklė patikrina pagal HTML požymį required. Svetainė
+neturi serverio, todėl pateikti anketos duomenys nėra išsaugomi ar siunčiami
+svetainės savininkui.
+
+SVETAINĖS APRIBOJIMAI
+---------------------
+Nuotraukos įkeliamos iš interneto, todėl joms peržiūrėti reikalingas interneto
+ryšys. Maršrutų lentelė yra informacinė, o orų duomenys ir automatinis
+maršrutų filtravimas šiame supaprastintame projekte nenaudojami.
