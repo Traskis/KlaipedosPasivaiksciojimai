@@ -10,8 +10,9 @@ kelionės anketą.
 SVETAINĖS PUSLAPIAI
 -------------------
 1. pradzia.html – svetainės pradžios puslapis.
-2. marsrutai.html – penkių maršrutų lentelė ir kelionės patarimai.
-3. galerija.html – šešių pajūrio nuotraukų galerija.
+2. marsrutai.html – šešių galerijoje pavaizduotų maršrutų lentelė ir kelionės patarimai.
+3. galerija.html – šešių pajūrio nuotraukų galerija; paspaudus nuotrauką
+   atveriamas ją atitinkantis pėsčiųjų maršrutas „Google Maps“ žemėlapyje.
 4. anketa.html – forma kelionės informacijai įvesti.
 
 KAIP SUDARYTAS PUSLAPIS
@@ -55,5 +56,5 @@ svetainės savininkui.
 SVETAINĖS APRIBOJIMAI
 ---------------------
 Nuotraukos įkeliamos iš interneto, todėl joms peržiūrėti reikalingas interneto
-ryšys. Maršrutų lentelė yra informacinė, o orų duomenys ir automatinis
+ryšys. Maršrutų lentelėje pateikiami apytiksliai atstumai ir trukmės, o orų duomenys ir automatinis
 maršrutų filtravimas šiame supaprastintame projekte nenaudojami.
