@@ -41,6 +41,15 @@
 
         <section class="lenteles-skyrius">
           <h2>Šeši pasivaikščiojimai prie jūros</h2>
+
+          <fieldset>
+            <legend>Rodyti maršrutus pagal sudėtingumą:</legend>
+            <label><input type="radio" name="sudetingumas" value="visi" checked> Visi</label>
+            <label><input type="radio" name="sudetingumas" value="lengvi"> Lengvi</label>
+            <label><input type="radio" name="sudetingumas" value="vidutiniai"> Vidutiniai</label>
+            <label><input type="radio" name="sudetingumas" value="sunkus"> Sunkūs</label>
+          </fieldset>
+
           <div class="lenteles-slinkimas">
             <table>
               <thead>
@@ -51,43 +60,50 @@
                   <th scope="col">Sudėtingumas</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
+
+              <tbody id="marsrutu-eilutes">
+                <tr class="sunkus">
                   <th scope="row">Klaipėdos molas – Melnragės paplūdimys</th>
-                  <td>3 km</td>
-                  <td>1 val.</td>
-                  <td>Lengvas</td>
+                  <td>11,5 km</td>
+                  <td>2h 38min</td>
+                  <td>Sunkus</td>
                 </tr>
-                <tr>
+
+                <tr class="vidutinis">
                   <th scope="row">Olando kepurė – Girulių paplūdimys</th>
-                  <td>6 km</td>
-                  <td>1 val. 30 min.</td>
-                  <td>Lengvas</td>
-                </tr>
-                <tr>
-                  <th scope="row">Smiltynė – Juodkrantė</th>
-                  <td>18 km</td>
-                  <td>6 val.</td>
+                  <td>3,8 km</td>
+                  <td>51 min.</td>
                   <td>Vidutinis</td>
                 </tr>
-                <tr>
+
+                <tr class="sunkus">
+                  <th scope="row">Smiltynė – Juodkrantė</th>
+                  <td>18,1 km</td>
+                  <td>4h 4min.</td>
+                  <td>Sunkus</td>
+                </tr>
+
+                <tr class="lengvas">
                   <th scope="row">Juodkrantės prieplauka – Raganų kalnas</th>
                   <td>1 km</td>
-                  <td>20 min.</td>
+                  <td>11 min.</td>
                   <td>Lengvas</td>
                 </tr>
-                <tr>
+
+                <tr class="vidutinis">
                   <th scope="row">Tomo Mano kultūros centras – Parnidžio kopa</th>
-                  <td>3 km</td>
-                  <td>1 val.</td>
+                  <td>2,7 km</td>
+                  <td>38 min.</td>
                   <td>Vidutinis</td>
                 </tr>
-                <tr>
+
+                <tr class="lengvas">
                   <th scope="row">Nidos centras – Parnidžio pažintinis takas</th>
-                  <td>3 km</td>
-                  <td>1 val.</td>
-                  <td>Vidutinis</td>
+                  <td>1,6 km</td>
+                  <td>23 min.</td>
+                  <td>Lengvas</td>
                 </tr>
+
               </tbody>
             </table>
           </div>
@@ -111,13 +127,34 @@
           <li>Apsauga nuo vėjo</li>
           <li>Įkrautas telefonas</li>
         </ul>
+
+        <p>Kiek turi laiko pasivaiksciojimui?</p>
+        <form>
+          <label for="laikas">Pasirink laiką:</label>
+          <select id="laikas" name="laikas">
+            <option value="30min">30 min.</option>
+            <option value="1h">1 val.</option>
+            <option value="2h">2 val.</option>
+            <option value="3h">3 val.</option>
+            <option value="4h">4 val.</option>
+          </select>
+        </form>
+
+        <p class="rekomendacija" data-laikas="30min">Trumpam pasivaikščiojimui: Raganų kalnas – apie 11 min.</p>
+        <p class="rekomendacija" data-laikas="1h">Maždaug valandai: Olando kepurė–Giruliai – apie 51 min.</p>
+        <p class="rekomendacija" data-laikas="2h">Porai valandų: Olando kepurė–Giruliai – apie 51 min.</p>
+        <p class="rekomendacija" data-laikas="3h">Iki 3 valandų: Klaipėdos molas–Melnragė – apie 2 val. 38 min.</p>
+        <p class="rekomendacija" data-laikas="4h">Ilgesniam žygiui: Smiltynė–Juodkrantė – apie 4 val. 4 min.</p>
+
         <p><a href="anketa.html">Planuoti išvyką</a></p>
       </aside>
+
     </div>
 
     <footer class="puslapio-apacia">
       <p>© 2026 Pajūrio takai</p>
     </footer>
+
   </div>
 </body>
 </html>

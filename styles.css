@@ -279,6 +279,12 @@ thead {
   font-weight: bold;
 }
 
+/*Sumazina vardo laukeli */
+.anketos-laukelis.vardas input {
+  width: 220px;
+  max-width: 100%;
+}
+
 /* Anketos įvedimo laukus, pasirinkimų sąrašą ir teksto lauką suvienodina. */
 .anketos-laukelis input,
 .anketos-laukelis select,
@@ -448,4 +454,36 @@ button {
     border-top: 1px solid #c9c8b9;
     border-left: 0;
   }
+}
+/* Marsrutu rusiavimo filtro stilius*/
+.lenteles-skyrius:has(input[value="lengvi"]:checked) tbody tr:not(.lengvas) {
+  display: none;
+}
+.lenteles-skyrius:has(input[value="vidutiniai"]:checked) tbody tr:not(.vidutinis) {
+  display: none;
+}
+.lenteles-skyrius:has(input[value="sunkus"]:checked) tbody tr:not(.sunkus) {
+  display: none;
+}
+/* cia galerijos filtras */
+.galerijos-tinklelis:has(input[value="lengvi"]:checked) figure:not(.lengvas) {
+  display: none;
+}
+.galerijos-tinklelis:has(input[value="vidutiniai"]:checked) figure:not(.vidutinis) {
+  display: none;
+}
+.galerijos-tinklelis:has(input[value="sunkus"]:checked) figure:not(.sunkus) {
+  display: none;
+}
+/* Cia marsrutu filtras */
+.rekomendacija {
+  display: none;
+}
+
+.soninis-blokas:has(#laikas option[value="30min"]:checked) .rekomendacija[data-laikas="30min"],
+.soninis-blokas:has(#laikas option[value="1h"]:checked) .rekomendacija[data-laikas="1h"],
+.soninis-blokas:has(#laikas option[value="2h"]:checked) .rekomendacija[data-laikas="2h"],
+.soninis-blokas:has(#laikas option[value="3h"]:checked) .rekomendacija[data-laikas="3h"],
+.soninis-blokas:has(#laikas option[value="4h"]:checked) .rekomendacija[data-laikas="4h"] {
+  display: block;
 }
