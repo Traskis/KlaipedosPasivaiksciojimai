@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pajūrio takai | Gamta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="svetaine">
+        <header class="svetaines-antraste">
+            <div class="antrastes-turinys">
+                <a class="svetaines-pavadinimas" href="index.html">Pajūrio takai</a>
+
+                <input class="meniu-varnele" id="meniu-varnele" type="checkbox" aria-label="Rodyti arba slėpti meniu" aria-controls="pagrindinis-meniu">
+                <label class="meniu-mygtukas" for="meniu-varnele" aria-hidden="true">
+                    <span class="meniu-bruksnelis"></span>
+                    <span class="meniu-bruksnelis"></span>
+                    <span class="meniu-bruksnelis"></span>
+                </label>
+
+                <nav class="pagrindinis-meniu" id="pagrindinis-meniu" aria-label="Pagrindinis meniu">
+                    <a href="index.html">Pradžia</a>
+                    <a href="marsrutai.html">Maršrutai</a>
+                    <a href="galerija.html">Galerija</a>
+                    <a href="anketa.html">Anketa</a>
+                    <a href="gamta.html" aria-current="page">Gamta</a>
+                </nav>
+
+                <span class="antrastes-uzrasas">Vakarų Lietuvos pakrantė</span>
+            </div>
+        </header>
+
+        <div class="puslapio-isdestymas">
+            <main class="pagrindinis-turinys">
+                <section class="puslapio-antraste">
+                    <p class="skyriaus-uzrasas">Gamta</p>
+                    <h1>Lietuvos pajūrio gamta</h1>
+                    <p>Sužinok apie Lietuvos pajūrio gamtą, augalus ir gyvūnus.</p>
+                    <p>
+                        <a href="#augalai">Augalai</a> |
+                        <a href="#gyvunai">Gyvūnai</a>
+                    </p>
+                    <div class="bangos-animacija" aria-hidden="true"></div>
+                </section>
+
+                <section class="gamta-turinys" id="augalai">
+                    <h2>Augalai</h2>
+                    <p>Pajūrio augalai prisitaikę augti smėlingoje dirvoje ir atlaikyti vėją.</p>
+                    <div class="augalu-korteles">
+                        <figure class="augalo-kortele" tabindex="0">
+                            <img src="Smiltynine-rugiaveide.jpg" alt="Smiltyninė rugiaveidė pajūrio kopose">
+                            <figcaption>
+                                <strong>Smiltyninė rugiaveidė</strong>
+                                <p>Jos ilgos šaknys padeda sutvirtinti kopų smėlį.</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="augalo-kortele" tabindex="0">
+                            <img src="augalas-zunda.jpg" alt="Pajūrinė zunda">
+                            <figcaption>
+                                <strong>Pajūrinė zunda</strong>
+                                <p>Retas pajūrio augalas, kurio negalima skinti.</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="augalo-kortele" tabindex="0">
+                            <img src="pušis-paprastoji.jpg" alt="Paprastoji pušis pajūrio miške">
+                            <figcaption>
+                                <strong>Paprastoji pušis</strong>
+                                <p>Ji dažna pajūrio miškuose, kur dirvožemis smėlingas.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="gamta-turinys" id="gyvunai">
+                    <h2>Gyvūnai</h2>
+                    <p>Pajūrio buveinėse galima sutikti įvairių paukščių, o Baltijos jūros pakrantėje – ir ruonių.</p>
+                    <div class="gyvunu-korteles">
+                        <figure class="gyvuno-kortele" tabindex="0">
+                            <img src="pilkasis-ruonis.jpg" alt="Pilkasis ruonis">
+                            <figcaption>
+                                <strong>Pilkasis ruonis</strong>
+                                <p>Baltijos jūros žinduolis. Pamatęs ruonį paplūdimyje, laikykis atstumo.</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="gyvuno-kortele" tabindex="0">
+                            <img src="Juodasis-kormoranas.jpg" alt="Juodasis kormoranas">
+                            <figcaption>
+                                <strong>Juodasis kormoranas</strong>
+                                <p>Puikiai nardo ir gaudo žuvis. Dažnai peri kolonijomis.</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="gyvuno-kortele" tabindex="0">
+                            <img src="Sidabrinis-kiras.jpg" alt="Sidabrinis kiras">
+                            <figcaption>
+                                <strong>Sidabrinis kiras</strong>
+                                <p>Pajūryje dažnas paukštis, ieškantis maisto pakrantėje</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="soninis-blokas">
+                <h2>Naudingos nuorodos</h2>
+                <ul>
+                    <li><a href="https://www.lgf.lt/" target="_blank" rel="noopener noreferrer">Lietuvos gamtos fondas</a></li>
+                    <li><a href="https://nerija.lrv.lt/lt/" target="_blank" rel="noopener noreferrer">Kuršių nerijos nacionalinis parkas</a></li>
+                    <li><a href="https://lgt.lrv.lt/lt/" target="_blank" rel="noopener noreferrer">Lietuvos geologijos tarnyba</a></li>
+                </ul>
+
+                <hr>
+
+                <h2>Pasitikrink</h2>
+                <p>Pažymėk, ką pastebėjai eidamas pajūrio taku:</p>
+                <ul>
+                    <li><label><input type="checkbox"> Smiltynine rugiaveidė</label></li>
+                    <li><label><input type="checkbox"> Pajūrinė zunda</label></li>
+                    <li><label><input type="checkbox"> Paprastoji pušis</label></li>
+                    <li><label><input type="checkbox"> Pilkasis ruonis</label></li>
+                    <li><label><input type="checkbox"> Juodasis kormoranas</label></li>
+                    <li><label><input type="checkbox"> Sidabrinis kiras</label></li>
+                </ul>
+                <button class="mazas-mygtukas" type="submit">Išsaugoti pasirinkimus</button>
+            </aside>
+        </div>
+        <footer class="puslapio-apacia">
+            <p>&copy; 2026 Pajūrio takai</p>
+        </footer>
+    </div>
+
+</body>
+</html>

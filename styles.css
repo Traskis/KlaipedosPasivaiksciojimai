@@ -536,3 +536,215 @@ button {
 .soninis-blokas:has(#laikas option[value="4h"]:checked) .rekomendacija[data-laikas="4h"] {
   display: block;
 }
+
+.bangos-animacija {
+  position: relative;
+  height: 160px;
+  margin-top: 24px;
+  overflow: hidden;
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 82% 24%, #f0ca76 0 17px, transparent 18px),
+    linear-gradient(to bottom, #dcefed 0 38%, #57aeb2 38%, #287f86 100%);
+}
+
+.bangos-animacija::before,
+.bangos-animacija::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  height: 65%;
+  border-radius: 50% 50% 0 0 / 22% 22% 0 0;
+}
+
+.bangos-animacija::before {
+  top: 43%;
+  background: #6cbfc0;
+  animation: bangos-slenka 8s ease-in-out infinite alternate;
+}
+
+.bangos-animacija::after {
+  top: 53%;
+  background: rgb(220 250 245 / 28%);
+  animation: bangos-slenka 6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes bangos-slenka {
+  from {
+    transform: translate(-8%, 8px) rotate(-4deg) scaleY(0.8);
+  }
+
+  to {
+    transform: translate(8%, -8px) rotate(4deg) scaleY(1.2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bangos-animacija::before,
+  .bangos-animacija::after {
+    animation: none;
+  }
+}
+
+/* Gamta puslapio turinio blokas */
+.gamta-turinys { 
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #c9c8b9;
+  border-radius: 14px;
+  background-color: #fbfaf5;
+}
+
+.gamta-turinys h2 {
+  margin-bottom: 8px;
+}
+
+.gamta-turinys ul {
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.gamta-turinys li {
+  padding: 10px 12px;
+  border-left: 3px solid #0ae9ed;
+  background-color: #f5f2e8;
+}
+
+/* Augalų kortelių tinklelis: trys vienodi stulpeliai su tarpu tarp jų. */
+.augalu-korteles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.augalo-kortele {
+  position: relative;
+  min-width: 0;
+  height: 240px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.augalo-kortele img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.augalo-kortele figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 16px;
+  background: rgb(23 63 60 / 90%);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.augalo-kortele:hover figcaption,
+.augalo-kortele:focus figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.augalo-kortele figcaption p {
+  margin: 6px 0 0;
+}
+
+/* Cia telefono ekrane rodomos augalu info iskart. */
+@media (max-width: 600px) {
+  .augalu-korteles {
+    grid-template-columns: 1fr;
+  }
+
+  .augalo-kortele {
+    height: auto;
+  }
+
+  .augalo-kortele img {
+    height: 220px;
+  }
+
+  .augalo-kortele figcaption {
+    position: static;
+    padding: 14px;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Cia gyvunu korteles tinklelis: trys vienodi stulpeliai su tarpu tarp jų. */
+.gyvunu-korteles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.gyvuno-kortele {
+  position: relative;
+  min-width: 0;
+  height: 240px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gyvuno-kortele img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gyvuno-kortele figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 16px;
+  background: rgb(23 63 60 / 90%);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.gyvuno-kortele:hover figcaption,
+.gyvuno-kortele:focus figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gyvuno-kortele figcaption p {
+  margin: 6px 0 0;
+}
+
+/* Cia telefono ekrane rodomos gyvunu info iskart. */
+@media (max-width: 600px) {
+  .gyvunu-korteles {
+    grid-template-columns: 1fr;
+  }
+
+  .gyvuno-kortele {
+    height: auto;
+  }
+
+  .gyvuno-kortele img {
+    height: 220px;
+  }
+
+  .gyvuno-kortele figcaption {
+    position: static;
+    padding: 14px;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mazas-mygtukas {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+}
